@@ -1,30 +1,49 @@
-# 🏠 CALIFORNIA HOUSE PRICING
+# 🏠 California House Pricing Prediction
 
-## 🧰 Software and Tools Required
-1. GitHub Account: https://github.com
-2. VS Code IDE: https://code.visualstudio.com/
-3. Heroku Account (optional): https://heroku.com
-4. Git CLI: https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line
-5. Python 3.7+
+> 🚀 A Machine Learning web app that predicts California housing prices based on various input features such as location, income, and population.
 
 ---
 
-## ⚙️ Setup and Run the Application
+## 🧠 Overview
+
+This project leverages **Machine Learning** to estimate **house prices in California** using the popular [California Housing Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html).  
+It includes a **Flask-based web interface** for real-time predictions and demonstrates a complete end-to-end ML workflow — from data preprocessing to model deployment.
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Tools / Technologies |
+|-----------|----------------------|
+| **Language** | Python 3.7+ |
+| **Libraries** | NumPy, Pandas, Matplotlib, Scikit-learn, Flask |
+| **IDE / Code Editor** | [VS Code](https://code.visualstudio.com/) |
+| **Version Control** | [Git](https://git-scm.com/) & [GitHub](https://github.com) |
+| **Deployment (Optional)** | [Heroku](https://www.heroku.com/) |
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to set up and run the project locally:
 
 ```bash
-echo "Creating virtual environment for Windows and macOS/Linux"
-python -m venv venv
-python3 -m venv venv
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/california-house-pricing.git
+cd california-house-pricing
 
-echo "Activating virtual environment"
-venv\Scripts\activate
-source venv/bin/activate
+# 2️⃣ Create a virtual environment
+python -m venv venv   # For Windows
+python3 -m venv venv  # For macOS/Linux
 
-echo "Upgrading pip and installing dependencies"
+# 3️⃣ Activate the environment
+venv\Scripts\activate      # On Windows
+source venv/bin/activate   # On macOS/Linux
+
+# 4️⃣ Install dependencies
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 
-echo "Running the application"
+# 5️⃣ Run the application
 python app.py
 
-echo "Application is now running! Open your browser and go to http://127.0.0.1:5000/"
